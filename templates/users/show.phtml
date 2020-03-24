@@ -1,0 +1,19 @@
+<a href="/users">Пользователи</a>
+
+<table>
+<?php
+
+foreach ($users as $value)
+{
+    if ($value['id'] == $id)
+    {
+        echo "<tr>
+    <td>$value[id]</td>
+    <td>$value[firstName]</td>
+    <td>$value[lastName]</td>
+    <td>$value[email]</td>
+    </tr>";
+    }
+}
+?>
+</table>

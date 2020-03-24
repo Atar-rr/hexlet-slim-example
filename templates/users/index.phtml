@@ -1,0 +1,8 @@
+<table>
+    <?php
+    foreach ($users as $val)
+    {
+        echo "<tr><td>$val[id]</td><td><a href='users/$val[id]'>$val[firstName]</a></td></tr>";
+    }
+    ?>
+</table>
